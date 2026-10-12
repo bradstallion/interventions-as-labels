@@ -12,7 +12,7 @@ localize the ask-vs-act decision in five model families, to steer it at run time
 to edit it in the weights, with success measured as the reduction of the overseer's
 future interventions.
 
-**Full snapshot** (1.2 GB): Zenodo, DOI *to be added*. It is this repository with the
+**Full snapshot** (1.1 GB): Zenodo, [doi:10.5281/zenodo.23319778](https://doi.org/10.5281/zenodo.23319778) (version 1.0.0; all versions: [10.5281/zenodo.23319777](https://doi.org/10.5281/zenodo.23319777)). It is this repository with the
 trained LoRA adapters added, which are needed only to re-evaluate the edited models
 without retraining them.
 
