@@ -1,0 +1,13 @@
+# M4 multi-seed: directions/gates fitted on the seed-2 collection TRAIN pairs,
+# fresh eval scenarios (eval_seed 10). Site 28 kept as fixed in advance.
+kind: steer_eval
+seed: 0
+eval_seed: 10
+n_pairs: 100
+site: 28
+records: store/derived/m2_collect_qwen3B_bf16_conv_s2/records.jsonl
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  device: auto
+  dtype: bfloat16
+out: store/derived/m4_steer_eval_qwen3B_s2

@@ -1,0 +1,11 @@
+# [multi-seed s3] Third family (predictions written down beforehand): OLMo-3-7B-Instruct — screening m1: 90% overask, 0 invalid.
+kind: collect_pairs
+seed: 3
+n_pairs: 300
+conversational: true
+model:
+  name: allenai/Olmo-3-7B-Instruct
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_olmo3_bf16_conv_s3

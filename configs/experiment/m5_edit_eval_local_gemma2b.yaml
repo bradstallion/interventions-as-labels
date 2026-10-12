@@ -1,0 +1,11 @@
+# M5 eval gemma: base vs LoRA-local, same scenarios as gemma steering (eval_seed 9).
+kind: edit_eval
+seed: 0
+eval_seed: 9
+n_pairs: 100
+adapter: store/derived/m5_lora_local_gemma2b/adapter
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5_edit_eval_local_gemma2b

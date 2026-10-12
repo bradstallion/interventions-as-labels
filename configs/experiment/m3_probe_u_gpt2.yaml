@@ -1,0 +1,9 @@
+# M3 dev-tier: U-probe pipeline on gpt2-small (mechanics + canaries).
+# Gate numbers come from the same config with model=gemma2_2b on the GPU machine.
+kind: probe_u
+seed: 0
+n_pairs: 60
+model:
+  name: gpt2
+  device: auto
+out: store/derived/m3_probe_u_gpt2

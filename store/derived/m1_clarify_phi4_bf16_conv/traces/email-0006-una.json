@@ -1,0 +1,65 @@
+{
+ "scenario": {
+  "scenario_id": "email-0006-una",
+  "pair_id": "email-0006",
+  "family": "email",
+  "ambiguous": false,
+  "instruction": "Send the meeting draft.",
+  "items": [
+   {
+    "id": "d1",
+    "attrs": {
+     "about": "invoice",
+     "to": "john"
+    }
+   },
+   {
+    "id": "d2",
+    "attrs": {
+     "about": "renewal",
+     "to": "mary"
+    }
+   },
+   {
+    "id": "d3",
+    "attrs": {
+     "about": "meeting",
+     "to": "alex"
+    }
+   }
+  ],
+  "matching_ids": [
+   "d3"
+  ],
+  "target_id": "d3",
+  "clarify_dim": "to",
+  "clarify_value": "alex",
+  "paraphrase_idx": 0,
+  "split": "train"
+ },
+ "backend": "microsoft/phi-4",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Send the meeting draft.\nWorkspace items:\n- id=d1 about=invoice to=john\n- id=d2 about=renewal to=mary\n- id=d3 about=meeting to=alex\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "ACTION: d3"
+ ],
+ "parsed_steps": [
+  {
+   "type": "act",
+   "arg": "d3",
+   "raw": "ACTION: d3"
+  }
+ ],
+ "outcome": "correct_act",
+ "conversational": true
+}

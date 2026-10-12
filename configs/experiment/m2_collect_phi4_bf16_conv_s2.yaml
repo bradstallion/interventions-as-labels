@@ -1,0 +1,12 @@
+# [multi-seed s2] Phi-4: third eligible candidate (37% overask, 63 correct_act, 0 invalid —
+# the most calibrated profile seen so far). Note: Phi-3-mini was excluded (0 overask).
+kind: collect_pairs
+seed: 2
+n_pairs: 300
+conversational: true
+model:
+  name: microsoft/phi-4
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_phi4_bf16_conv_s2

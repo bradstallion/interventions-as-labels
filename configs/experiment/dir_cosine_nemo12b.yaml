@@ -1,0 +1,12 @@
+# Cosines between behavior/U/style directions on Nemo (bridge).
+kind: dir_cosine
+seed: 0
+records: store/derived/m2_collect_nemo12b_bf16_conv/records.jsonl
+sites: [16, 19, 22, 24, 28, 32]
+style_n: 40
+model:
+  name: mistralai/Mistral-Nemo-Instruct-2407
+  device: auto
+  dtype: bfloat16
+  bridge: true
+out: store/derived/dir_cosine_nemo12b

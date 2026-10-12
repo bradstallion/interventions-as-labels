@@ -1,0 +1,13 @@
+# Replica on a second model: tau_overask collection on gemma-2-2b-it bf16,
+# conversational scaffold (gemma showed 93% overask in bf16, M1). System role
+# is folded into the user turn by HFBackend (gemma rejects system).
+kind: collect_pairs
+seed: 1
+n_pairs: 300
+conversational: true
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_gemma2b_bf16_conv

@@ -1,0 +1,13 @@
+# Cosines between behavior/U/style directions on OLMo-3 (bridge). The prediction
+# written down beforehand uses the cosine AT THE CAUSAL PEAK (from the patch run), BEFORE any LoRA.
+kind: dir_cosine
+seed: 0
+records: store/derived/m2_collect_olmo3_bf16_conv/records.jsonl
+sites: [11, 13, 15, 17, 19, 21]
+style_n: 40
+model:
+  name: allenai/Olmo-3-7B-Instruct
+  device: auto
+  dtype: bfloat16
+  bridge: true
+out: store/derived/dir_cosine_olmo3

@@ -1,0 +1,15 @@
+# Gated steering on gemma-2-2b-it, site L21 (causal peak). NOTE: on gemma the
+# style direction ALSO flips (1.00 at L21, vs 7% on qwen) — the steer_style
+# arm here is the decisive test of whether specificity lives in the direction
+# or in the gate on this model.
+kind: steer_eval
+seed: 0
+eval_seed: 9
+n_pairs: 100
+site: 21
+records: store/derived/m2_collect_gemma2b_bf16_conv/records.jsonl
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/m4_steer_eval_gemma2b

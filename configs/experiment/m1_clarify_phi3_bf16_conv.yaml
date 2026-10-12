@@ -1,0 +1,9 @@
+# Third family (test 2 of the geometric rule): does Phi-3 over-ask?
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: microsoft/Phi-3-mini-4k-instruct
+  device: auto
+out: store/derived/m1_clarify_phi3_bf16_conv

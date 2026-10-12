@@ -1,0 +1,13 @@
+# Third family: probe sweep (patch/cosine layers chosen afterwards from the curve).
+# bridge: true — the legacy HookedTransformer port of OLMo-3 is BROKEN (W_K zero-filled,
+# wrong attention window: context-sensitivity canary failed on 2026-07-06);
+# TransformerBridge wraps the healthy HF forward pass. The probe canaries remain the arbiter.
+kind: probe_overask
+seed: 0
+records: store/derived/m2_collect_olmo3_bf16_conv/records.jsonl
+model:
+  name: allenai/Olmo-3-7B-Instruct
+  device: auto
+  dtype: bfloat16
+  bridge: true
+out: store/derived/m3_probe_overask_olmo3

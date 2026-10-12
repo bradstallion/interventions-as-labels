@@ -1,0 +1,11 @@
+kind: edit_eval
+seed: 0
+eval_seed: 10
+n_pairs: 100
+adapter: store/derived/m5_lora_local_nemo12b_s2/adapter
+model:
+  name: mistralai/Mistral-Nemo-Instruct-2407
+  device: auto
+  dtype: bfloat16
+  bridge: true
+out: store/derived/m5_edit_eval_local_nemo12b_s2

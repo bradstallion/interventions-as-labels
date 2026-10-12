@@ -1,0 +1,32 @@
+{
+ "model": "Qwen/Qwen2.5-3B-Instruct",
+ "sites": {
+  "blocks.12.hook_resid_post": {
+   "cos_behavior_style": -0.19182813167572021,
+   "cos_behavior_u": 0.14796845614910126,
+   "cos_u_style": -0.15314453840255737
+  },
+  "blocks.20.hook_resid_post": {
+   "cos_behavior_style": 0.052616871893405914,
+   "cos_behavior_u": 0.08364567160606384,
+   "cos_u_style": 0.018839368596673012
+  },
+  "blocks.24.hook_resid_post": {
+   "cos_behavior_style": 0.08370967954397202,
+   "cos_behavior_u": 0.05057723447680473,
+   "cos_u_style": 0.07862328737974167
+  },
+  "blocks.28.hook_resid_post": {
+   "cos_behavior_style": 0.12116322666406631,
+   "cos_behavior_u": 0.02009722590446472,
+   "cos_u_style": -0.005033251363784075
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-05T16:45:02.620533+00:00",
+  "git_sha": "unknown",
+  "config_hash": "d2cbcc19e204",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

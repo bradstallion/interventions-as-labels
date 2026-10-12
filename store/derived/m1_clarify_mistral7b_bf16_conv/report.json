@@ -1,0 +1,19 @@
+{
+ "backend": "mistralai/Mistral-7B-Instruct-v0.1",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "reask_after_answer": 80,
+  "overask": 80,
+  "invalid": 40
+ },
+ "failure_rate_proceed_when_ambiguous": 0.0,
+ "invalid_rate": 0.2,
+ "meta": {
+  "created_utc": "2026-07-06T09:29:12.406560+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

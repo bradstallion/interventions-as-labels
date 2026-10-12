@@ -1,0 +1,90 @@
+{
+ "scenario": {
+  "scenario_id": "email-0039-amb",
+  "pair_id": "email-0039",
+  "family": "email",
+  "ambiguous": true,
+  "instruction": "Ship the renewal draft now.",
+  "items": [
+   {
+    "id": "d3",
+    "attrs": {
+     "about": "renewal",
+     "to": "alex"
+    }
+   },
+   {
+    "id": "d1",
+    "attrs": {
+     "about": "meeting",
+     "to": "mary"
+    }
+   },
+   {
+    "id": "d2",
+    "attrs": {
+     "about": "renewal",
+     "to": "sam"
+    }
+   }
+  ],
+  "matching_ids": [
+   "d3",
+   "d2"
+  ],
+  "target_id": "d2",
+  "clarify_dim": "to",
+  "clarify_value": "sam",
+  "paraphrase_idx": 2,
+  "split": "test"
+ },
+ "backend": "meta-llama/Llama-3.2-3B-Instruct",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Ship the renewal draft now.\nWorkspace items:\n- id=d3 about=renewal to=alex\n- id=d1 about=meeting to=mary\n- id=d2 about=renewal to=sam\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ],
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Ship the renewal draft now.\nWorkspace items:\n- id=d3 about=renewal to=alex\n- id=d1 about=meeting to=mary\n- id=d2 about=renewal to=sam\nReply with one line: ACTION: <id> or ASK: <question>"
+   },
+   {
+    "role": "assistant",
+    "content": "ASK: which renewal draft, the one to Alex or the one to Sam?"
+   },
+   {
+    "role": "user",
+    "content": "Answer to your question: I mean the one with to=sam.\n\nTask: Ship the renewal draft now.\nWorkspace items:\n- id=d3 about=renewal to=alex\n- id=d1 about=meeting to=mary\n- id=d2 about=renewal to=sam\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "ASK: which renewal draft, the one to Alex or the one to Sam?",
+  "ACTION: d2"
+ ],
+ "parsed_steps": [
+  {
+   "type": "ask",
+   "arg": "which renewal draft, the one to Alex or the one to Sam?",
+   "raw": "ASK: which renewal draft, the one to Alex or the one to Sam?"
+  },
+  {
+   "type": "act",
+   "arg": "d2",
+   "raw": "ACTION: d2"
+  }
+ ],
+ "outcome": "correct_clarify",
+ "conversational": true
+}

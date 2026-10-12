@@ -1,0 +1,17 @@
+{
+ "backend": "Qwen/Qwen3-1.7B",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "invalid": 200
+ },
+ "failure_rate_proceed_when_ambiguous": 0.0,
+ "invalid_rate": 1.0,
+ "meta": {
+  "created_utc": "2026-07-06T11:37:46.096522+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

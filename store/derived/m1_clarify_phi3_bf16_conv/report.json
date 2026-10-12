@@ -1,0 +1,20 @@
+{
+ "backend": "microsoft/Phi-3-mini-4k-instruct",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "proceed_when_ambiguous": 99,
+  "correct_act": 97,
+  "overask": 3,
+  "correct_clarify": 1
+ },
+ "failure_rate_proceed_when_ambiguous": 0.99,
+ "invalid_rate": 0.0,
+ "meta": {
+  "created_utc": "2026-07-06T09:15:56.203008+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

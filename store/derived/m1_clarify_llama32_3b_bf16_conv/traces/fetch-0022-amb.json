@@ -1,0 +1,90 @@
+{
+ "scenario": {
+  "scenario_id": "fetch-0022-amb",
+  "pair_id": "fetch-0022",
+  "family": "fetch",
+  "ambiguous": true,
+  "instruction": "Bring me the large book.",
+  "items": [
+   {
+    "id": "b2",
+    "attrs": {
+     "size": "large",
+     "color": "red"
+    }
+   },
+   {
+    "id": "b1",
+    "attrs": {
+     "size": "tiny",
+     "color": "yellow"
+    }
+   },
+   {
+    "id": "b3",
+    "attrs": {
+     "size": "large",
+     "color": "blue"
+    }
+   }
+  ],
+  "matching_ids": [
+   "b2",
+   "b3"
+  ],
+  "target_id": "b3",
+  "clarify_dim": "color",
+  "clarify_value": "blue",
+  "paraphrase_idx": 0,
+  "split": "train"
+ },
+ "backend": "meta-llama/Llama-3.2-3B-Instruct",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Bring me the large book.\nWorkspace items:\n- id=b2 color=red size=large\n- id=b1 color=yellow size=tiny\n- id=b3 color=blue size=large\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ],
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Bring me the large book.\nWorkspace items:\n- id=b2 color=red size=large\n- id=b1 color=yellow size=tiny\n- id=b3 color=blue size=large\nReply with one line: ACTION: <id> or ASK: <question>"
+   },
+   {
+    "role": "assistant",
+    "content": "ASK: which large book, b2 or b3?"
+   },
+   {
+    "role": "user",
+    "content": "Answer to your question: I mean the one with color=blue.\n\nTask: Bring me the large book.\nWorkspace items:\n- id=b2 color=red size=large\n- id=b1 color=yellow size=tiny\n- id=b3 color=blue size=large\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "ASK: which large book, b2 or b3?",
+  "ACTION: b3"
+ ],
+ "parsed_steps": [
+  {
+   "type": "ask",
+   "arg": "which large book, b2 or b3?",
+   "raw": "ASK: which large book, b2 or b3?"
+  },
+  {
+   "type": "act",
+   "arg": "b3",
+   "raw": "ACTION: b3"
+  }
+ ],
+ "outcome": "correct_clarify",
+ "conversational": true
+}

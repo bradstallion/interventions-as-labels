@@ -1,0 +1,170 @@
+{
+ "P1 read top-10": {
+  "10709": {
+   "explanation": "structured data and code examples formatted in specific programming languages",
+   "top_tokens": "<code>, ```, ```, , "
+  },
+  "6032": {
+   "explanation": "questions and inquiries related to analysis and introspection",
+   "top_tokens": "question, questions, ask, Question, question"
+  },
+  "6191": {
+   "explanation": "references to specific policies or rules",
+   "top_tokens": "tartalomaj\u00e1nl\u00f3, ometrial, \u8e87, esgue, Bioaccumulative"
+  },
+  "9662": {
+   "explanation": " mathematical symbols and expressions",
+   "top_tokens": "kinetic, kinase, kernel, k, K"
+  },
+  "8593": {
+   "explanation": "references to methodology and processes in scientific experimentation",
+   "top_tokens": "collect, grab, collecting, collected, picking"
+  },
+  "7590": {
+   "explanation": "elements related to server configuration and client application management in code",
+   "top_tokens": "propOrder, iction, perspiration, withOpacity, regation"
+  },
+  "9833": {
+   "explanation": "phrases related to government action and public demand for policy changes",
+   "top_tokens": "action, action, Action, Action, ACTION"
+  },
+  "14204": {
+   "explanation": "syntax related to code structure and formatting elements",
+   "top_tokens": "hou\u017fe, purpo\u017fe, Efq, \u017ftate, plea\u017fure"
+  },
+  "14337": {
+   "explanation": " code-related keywords and method definitions in programming contexts",
+   "top_tokens": "\u0645\u062a\u0639\u0644\u0642\u0647, ValueStyle, IntoConstraints, \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438, CreateTagHelper"
+  },
+  "16251": {
+   "explanation": " expressions of emotion and personal interactions",
+   "top_tokens": "your, you, your, yourself, Your"
+  }
+ },
+ "P3 behavior-specific": {
+  "11319": {
+   "explanation": "terms related to medical or scientific findings and conditions",
+   "top_tokens": "Tikang, pinulongan, esternos, snippetHide, pylab"
+  },
+  "14798": {
+   "explanation": " technical terms and phrases related to database interactions and SQL commands",
+   "top_tokens": "mybatisplus, \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f\u0924\u093e, GenerationType, UnsafeEnabled, k\u00f6nyv"
+  },
+  "6962": {
+   "explanation": " phrases related to health risks and medical studies",
+   "top_tokens": "larger, full, bigger, \u672c\u683c, Larger"
+  },
+  "5651": {
+   "explanation": " programming-related terminology, specifically aspects of quiz functionality and question handling",
+   "top_tokens": "answers, answer, questions, question, answering"
+  },
+  "12489": {
+   "explanation": "elements related to programming logic and database operations",
+   "top_tokens": "request, request, Request, Request, requests"
+  },
+  "141": {
+   "explanation": "elements discussing selection processes and user choices",
+   "top_tokens": "choice, choose, choosing, selection, selecting"
+  },
+  "10668": {
+   "explanation": "references to unclear or undetermined biological functions and relationships",
+   "top_tokens": "unknown, unclear, Unknown, unknown, Unknown"
+  },
+  "11780": {
+   "explanation": "terms related to biological processes and components involved in cell metabolism and replication",
+   "top_tokens": "__':\r, \u0645\u062a\u0639\u0644\u0642\u0647, \u51fa\u7248\u5e74, __\":\r, tvguidetime"
+  },
+  "1245": {
+   "explanation": "legal terminology related to lawsuits and legal actions involving claims",
+   "top_tokens": "lawsuit, suing, lawsuits, sued, litigation"
+  },
+  "6710": {
+   "explanation": "key phrases related to advancements and applications of new technologies",
+   "top_tokens": "technology, technologies, technology, technologie, technological"
+  }
+ },
+ "P3 shared": {
+  "6032": {
+   "explanation": "questions and inquiries related to analysis and introspection",
+   "top_tokens": "question, questions, ask, Question, question"
+  },
+  "9833": {
+   "explanation": "phrases related to government action and public demand for policy changes",
+   "top_tokens": "action, action, Action, Action, ACTION"
+  },
+  "866": {
+   "explanation": " parentheses and referenced elements within scientific or technical contexts",
+   "top_tokens": "CSS, DSS, FS, FS, TSS"
+  },
+  "5379": {
+   "explanation": "phrases indicating certainty or doubt regarding a situation or conclusion",
+   "top_tokens": "doubt, doubts, doubted, doubt, Doubt"
+  },
+  "12281": {
+   "explanation": "interactions that involve questioning and answering during discussions or interrogations",
+   "top_tokens": "questions, question, questions, question, ques"
+  },
+  "6191": {
+   "explanation": "references to specific policies or rules",
+   "top_tokens": "tartalomaj\u00e1nl\u00f3, ometrial, \u8e87, esgue, Bioaccumulative"
+  },
+  "322": {
+   "explanation": "elements related to programming and game mechanics",
+   "top_tokens": "input, input, Input, Input, prompt"
+  },
+  "9662": {
+   "explanation": " mathematical symbols and expressions",
+   "top_tokens": "kinetic, kinase, kernel, k, K"
+  },
+  "1693": {
+   "explanation": "references to legal terminology and procedures",
+   "top_tokens": "\u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649, \u0627\u0644\u062d\u0631\u0647, RetentionPolicy, Exacts, DialogInterface"
+  },
+  "3542": {
+   "explanation": "sentences discussing promises, plans, and expectations regarding political actions and their outcomes",
+   "top_tokens": "implementation, execution, execute, Implementation, implementation"
+  }
+ },
+ "P3 style-specific": {
+  "14337": {
+   "explanation": " code-related keywords and method definitions in programming contexts",
+   "top_tokens": "\u0645\u062a\u0639\u0644\u0642\u0647, ValueStyle, IntoConstraints, \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438, CreateTagHelper"
+  },
+  "1822": {
+   "explanation": "specialized terminology and formatting commonly used in technical and scientific writing",
+   "top_tokens": "\u062a\u0636\u064a\u0641\u0644\u0647\u0627, resourceCulture, ########., Monfieur, The\u017fe"
+  },
+  "9597": {
+   "explanation": "instances of code syntax and programming structure",
+   "top_tokens": ", (, \n\n, \n, ,"
+  },
+  "3154": {
+   "explanation": " symbols and mathematical expressions related to equations and operators",
+   "top_tokens": "ItemBackground, ddelweddau, ViewImports, abstractmethod, Lunch"
+  },
+  "8424": {
+   "explanation": "questions or inquiries related to specific subjects or scenarios",
+   "top_tokens": "Does, does, Does, did, Did"
+  },
+  "4138": {
+   "explanation": "technical or programming terms and references across various contexts",
+   "top_tokens": "^(@), [],\r, Efq, becau\u017fe, )}]{"
+  },
+  "3461": {
+   "explanation": "references to software licensing and copyright information",
+   "top_tokens": "<bos>, enumi, \u043d\u0435\u043d, \u03c1\u03c5, saraba"
+  },
+  "11903": {
+   "explanation": "terms related to legal proceedings and medical negligence",
+   "top_tokens": ")\");\r, ratulations, });*/, })*/, }\")\r"
+  },
+  "5943": {
+   "explanation": "phrases and questions related to procedural instructions and inquiries",
+   "top_tokens": "what, what, What, What, WHAT"
+  },
+  "2214": {
+   "explanation": "punctuation marks commonly used in programming code",
+   "top_tokens": "Wol, userSchema, \u03c0\u03c5, Wol, v\u1eady"
+  }
+ }
+}

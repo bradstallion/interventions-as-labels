@@ -1,0 +1,42 @@
+{
+ "model": "mistralai/Mistral-Nemo-Instruct-2407",
+ "sites": {
+  "blocks.16.hook_resid_post": {
+   "cos_behavior_style": 0.07600174099206924,
+   "cos_behavior_u": 0.06516881287097931,
+   "cos_u_style": 0.061880920082330704
+  },
+  "blocks.19.hook_resid_post": {
+   "cos_behavior_style": 0.4717812240123749,
+   "cos_behavior_u": 0.08426837623119354,
+   "cos_u_style": -0.02920147031545639
+  },
+  "blocks.22.hook_resid_post": {
+   "cos_behavior_style": 0.42146164178848267,
+   "cos_behavior_u": 0.07429277151823044,
+   "cos_u_style": -0.02081953175365925
+  },
+  "blocks.24.hook_resid_post": {
+   "cos_behavior_style": 0.41064557433128357,
+   "cos_behavior_u": 0.07402368634939194,
+   "cos_u_style": -0.011483008973300457
+  },
+  "blocks.28.hook_resid_post": {
+   "cos_behavior_style": 0.4050884544849396,
+   "cos_behavior_u": 0.07418753206729889,
+   "cos_u_style": 0.00018508921493776143
+  },
+  "blocks.32.hook_resid_post": {
+   "cos_behavior_style": 0.5109461545944214,
+   "cos_behavior_u": 0.06888695806264877,
+   "cos_u_style": 0.0022034638095647097
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-06T17:32:51.029616+00:00",
+  "git_sha": "unknown",
+  "config_hash": "f276927e1c1d",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

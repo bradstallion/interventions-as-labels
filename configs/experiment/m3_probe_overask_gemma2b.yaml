@@ -1,0 +1,10 @@
+# tau_overask attribution, second model: gemma-2-2b-it bf16 (26 layers;
+# layer sweep adapts to the model). Collection: 90% overask, FP canary 0.
+kind: probe_overask
+seed: 0
+records: store/derived/m2_collect_gemma2b_bf16_conv/records.jsonl
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/m3_probe_overask_gemma2b

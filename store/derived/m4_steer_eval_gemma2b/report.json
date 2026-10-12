@@ -1,0 +1,111 @@
+{
+ "policies": {
+  "none": {
+   "outcomes": {
+    "correct_clarify": 82,
+    "overask": 86,
+    "proceed_when_ambiguous": 13,
+    "correct_act": 14,
+    "clarify_then_wrong": 5
+   },
+   "burden": {
+    "n": 200,
+    "watched": 179,
+    "interventions": 90,
+    "missed": 14,
+    "burden": 1.795
+   },
+   "gate_fired_episodes": 0,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.0
+  },
+  "prompt_only": {
+   "outcomes": {
+    "correct_clarify": 75,
+    "overask": 72,
+    "proceed_when_ambiguous": 21,
+    "correct_act": 28,
+    "clarify_then_wrong": 4
+   },
+   "burden": {
+    "n": 200,
+    "watched": 176,
+    "interventions": 83,
+    "missed": 14,
+    "burden": 1.71
+   },
+   "gate_fired_episodes": 0,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.04735376044568243
+  },
+  "steer_gated": {
+   "outcomes": {
+    "correct_clarify": 79,
+    "correct_act": 76,
+    "overask": 24,
+    "proceed_when_ambiguous": 17,
+    "clarify_then_wrong": 4
+   },
+   "burden": {
+    "n": 200,
+    "watched": 92,
+    "interventions": 21,
+    "missed": 24,
+    "burden": 0.67
+   },
+   "gate_fired_episodes": 86,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.6267409470752089
+  },
+  "steer_style": {
+   "outcomes": {
+    "correct_clarify": 78,
+    "correct_act": 93,
+    "proceed_when_ambiguous": 19,
+    "clarify_then_wrong": 3,
+    "overask": 7
+   },
+   "burden": {
+    "n": 200,
+    "watched": 36,
+    "interventions": 2,
+    "missed": 27,
+    "burden": 0.2
+   },
+   "gate_fired_episodes": 86,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.8885793871866295
+  },
+  "steer_random": {
+   "outcomes": {
+    "correct_clarify": 82,
+    "overask": 86,
+    "proceed_when_ambiguous": 13,
+    "correct_act": 14,
+    "clarify_then_wrong": 5
+   },
+   "burden": {
+    "n": 200,
+    "watched": 179,
+    "interventions": 90,
+    "missed": 14,
+    "burden": 1.795
+   },
+   "gate_fired_episodes": 86,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.0
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-05T16:01:26.075290+00:00",
+  "git_sha": "unknown",
+  "config_hash": "8cde03890923",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

@@ -1,0 +1,12 @@
+# Third family (round 2): Apertus-8B — m1: 100% overask, 0 invalid, TL healthy.
+# Declared risk: possibly no behavioral contrast (0 act in m1).
+kind: collect_pairs
+seed: 1
+n_pairs: 300
+conversational: true
+model:
+  name: swiss-ai/Apertus-8B-Instruct-2509
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_apertus8b_bf16_conv

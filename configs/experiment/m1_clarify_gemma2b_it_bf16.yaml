@@ -1,0 +1,9 @@
+# GATE M1 (GPU tier): gemma-2-2b-it in bf16, full precision behavior.
+# Gate: failure_rate_proceed_when_ambiguous >= 0.30 AND ask behavior present.
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+out: store/derived/m1_clarify_gemma2b_it_bf16

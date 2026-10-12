@@ -1,0 +1,21 @@
+{
+ "backend": "google/gemma-2-2b-it",
+ "n_scenarios": 200,
+ "outcomes": {
+  "invalid": 62,
+  "overask": 93,
+  "correct_clarify": 23,
+  "proceed_when_ambiguous": 12,
+  "correct_act": 7,
+  "clarify_then_wrong": 3
+ },
+ "failure_rate_proceed_when_ambiguous": 0.12,
+ "invalid_rate": 0.31,
+ "meta": {
+  "created_utc": "2026-07-03T18:38:28.139613+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

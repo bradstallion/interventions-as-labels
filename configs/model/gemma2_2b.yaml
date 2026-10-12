@@ -1,0 +1,6 @@
+# GPU tier: gate-producing runs ONLY (bf16, full interpretability).
+# Do not run this config on the dev machine (won't fit alongside caching).
+name: google/gemma-2-2b
+backend: transformer_lens
+dtype: bfloat16
+device: auto

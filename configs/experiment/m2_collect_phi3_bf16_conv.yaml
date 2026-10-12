@@ -1,0 +1,11 @@
+# Third family: tau_overask collection on Phi-3.
+kind: collect_pairs
+seed: 1
+n_pairs: 300
+conversational: true
+model:
+  name: microsoft/Phi-3-mini-4k-instruct
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_phi3_bf16_conv

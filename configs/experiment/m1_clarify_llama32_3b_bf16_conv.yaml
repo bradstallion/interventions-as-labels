@@ -1,0 +1,10 @@
+# Third family, screening: HF access
+# obtained 2026-07-06. Eligible if overask >= 30% AND contrast (correct_act > 0).
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: meta-llama/Llama-3.2-3B-Instruct
+  device: auto
+out: store/derived/m1_clarify_llama32_3b_bf16_conv

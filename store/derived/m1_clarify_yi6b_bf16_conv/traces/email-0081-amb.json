@@ -1,0 +1,66 @@
+{
+ "scenario": {
+  "scenario_id": "email-0081-amb",
+  "pair_id": "email-0081",
+  "family": "email",
+  "ambiguous": true,
+  "instruction": "Please send out the sam draft.",
+  "items": [
+   {
+    "id": "d2",
+    "attrs": {
+     "to": "sam",
+     "about": "renewal"
+    }
+   },
+   {
+    "id": "d3",
+    "attrs": {
+     "to": "alex",
+     "about": "meeting"
+    }
+   },
+   {
+    "id": "d1",
+    "attrs": {
+     "to": "sam",
+     "about": "invoice"
+    }
+   }
+  ],
+  "matching_ids": [
+   "d2",
+   "d1"
+  ],
+  "target_id": "d2",
+  "clarify_dim": "about",
+  "clarify_value": "renewal",
+  "paraphrase_idx": 1,
+  "split": "train"
+ },
+ "backend": "01-ai/Yi-6B-Chat",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Please send out the sam draft.\nWorkspace items:\n- id=d2 about=renewal to=sam\n- id=d3 about=meeting to=alex\n- id=d1 about=invoice to=sam\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "Task: Please send out the sam draft.\nWorkspace items:\n- id=d2 about=renewal to=sam\n- id=d3 about=meeting to=al"
+ ],
+ "parsed_steps": [
+  {
+   "type": "invalid",
+   "arg": "",
+   "raw": "Task: Please send out the sam draft.\nWorkspace items:\n- id=d2 about=renewal to=sam\n- id=d3 about=meeting to=al"
+  }
+ ],
+ "outcome": "invalid",
+ "conversational": true
+}

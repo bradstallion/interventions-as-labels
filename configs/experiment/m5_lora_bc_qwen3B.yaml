@@ -1,0 +1,17 @@
+# M5 IIL baseline: same data/recipe as m5_lora_local, but LoRA on
+# ALL layers — classic behavior cloning from the same interventions.
+kind: lora_edit
+seed: 0
+split_seed: 0
+records: store/derived/m2_collect_qwen3B_bf16_conv/records.jsonl
+layers_to_transform: null
+lora_r: 8
+lora_alpha: 16
+lr: 1.0e-4
+epochs: 2
+grad_accum: 8
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5_lora_bc_qwen3B

@@ -1,0 +1,92 @@
+{
+ "run_dir": "store/derived/m4_steer_eval_qwen3B_s2",
+ "n_seeds": 1000,
+ "n_boot": 2000,
+ "reproduced_point_burden": {
+  "none": 1.4,
+  "prompt_only": 1.41,
+  "steer_gated": 0.12,
+  "steer_style": 1.39,
+  "steer_random": 1.4
+ },
+ "reproduced_point_irr": {
+  "none": 0.0,
+  "prompt_only": -0.00714285714285715,
+  "steer_gated": 0.9142857142857143,
+  "steer_style": 0.00714285714285715,
+  "steer_random": 0.0
+ },
+ "seed_sensitivity": {
+  "prompt_only": {
+   "mean": -0.07343974736507058,
+   "p2.5": -0.3276648064178584,
+   "median": -0.05196790976607492,
+   "p97.5": 0.11818516197586015,
+   "min": -1.3357664233576643,
+   "max": 0.31999999999999995,
+   "frac_positive": 0.08
+  },
+  "steer_gated": {
+   "mean": 0.8553923484416752,
+   "p2.5": 0.7127434186801298,
+   "median": 0.8679556634908774,
+   "p97.5": 0.9381107491856677,
+   "min": 0.5751633986928104,
+   "max": 0.9510703363914372,
+   "frac_positive": 1.0
+  },
+  "steer_style": {
+   "mean": 0.006294532086933661,
+   "p2.5": 0.0,
+   "median": 0.006622516556291397,
+   "p97.5": 0.009260335917312668,
+   "min": 0.0,
+   "max": 0.015037593984962419,
+   "frac_positive": 0.897
+  },
+  "steer_random": {
+   "mean": 0.0,
+   "p2.5": 0.0,
+   "median": 0.0,
+   "p97.5": 0.0,
+   "min": 0.0,
+   "max": 0.0,
+   "frac_positive": 0.0
+  }
+ },
+ "bootstrap": {
+  "prompt_only": {
+   "mean": -0.07612947237024137,
+   "ci95": [
+    -0.3877113959972941,
+    0.15923915207006367
+   ],
+   "frac_positive": 0.1665
+  },
+  "steer_gated": {
+   "mean": 0.8386630412011017,
+   "ci95": [
+    0.6834527052913881,
+    0.9371304406113147
+   ],
+   "frac_positive": 1.0
+  },
+  "steer_style": {
+   "mean": 0.013259113456420493,
+   "ci95": [
+    0.0,
+    0.06274846434264934
+   ],
+   "frac_positive": 0.561
+  },
+  "steer_random": {
+   "mean": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "frac_positive": 0.0
+  }
+ },
+ "criterion_b_interval_excludes_zero": true
+}

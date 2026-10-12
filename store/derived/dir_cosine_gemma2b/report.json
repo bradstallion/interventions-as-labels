@@ -1,0 +1,32 @@
+{
+ "model": "google/gemma-2-2b-it",
+ "sites": {
+  "blocks.15.hook_resid_post": {
+   "cos_behavior_style": 0.11886271089315414,
+   "cos_behavior_u": 0.027077605947852135,
+   "cos_u_style": -0.0010728000197559595
+  },
+  "blocks.18.hook_resid_post": {
+   "cos_behavior_style": 0.480997234582901,
+   "cos_behavior_u": 0.003972344100475311,
+   "cos_u_style": -0.007813400588929653
+  },
+  "blocks.21.hook_resid_post": {
+   "cos_behavior_style": 0.5187989473342896,
+   "cos_behavior_u": -0.0023537043016403913,
+   "cos_u_style": -0.007377543020993471
+  },
+  "blocks.24.hook_resid_post": {
+   "cos_behavior_style": 0.5277003645896912,
+   "cos_behavior_u": -0.011515752412378788,
+   "cos_u_style": -0.0020246594212949276
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-05T16:44:33.454676+00:00",
+  "git_sha": "unknown",
+  "config_hash": "19aba79cb682",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

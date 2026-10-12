@@ -1,0 +1,12 @@
+# M5 eval OLMo-3 (bc): base vs edit, fresh scenarios eval_seed 9, via bridge.
+kind: edit_eval
+seed: 0
+eval_seed: 9
+n_pairs: 100
+adapter: store/derived/m5_lora_bc_olmo3/adapter
+model:
+  name: allenai/Olmo-3-7B-Instruct
+  device: auto
+  dtype: bfloat16
+  bridge: true
+out: store/derived/m5_edit_eval_bc_olmo3

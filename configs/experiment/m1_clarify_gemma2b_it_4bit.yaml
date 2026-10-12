@@ -1,0 +1,13 @@
+# Dev-prototyping: Gemma 2 2B IT in 4-bit (~2GB) on the 6GB dev GPU.
+# Requires HF_TOKEN with accepted Gemma license (gated repo).
+# NOTE for M3: Gemma Scope SAEs are trained on the *pretrained* gemma-2-2b;
+# using the IT model for agent behavior + PT SAEs for features is a known,
+# reasonable transfer — to be validated explicitly.
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+model:
+  name: google/gemma-2-2b-it
+  quantization: 4bit
+  device: auto
+out: store/derived/clarify_eval_gemma2b_it_4bit

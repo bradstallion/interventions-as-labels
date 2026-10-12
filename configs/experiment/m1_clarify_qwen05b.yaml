@@ -1,0 +1,9 @@
+# Dev smoke: pipeline check with a tiny open instruct model (~1GB, fits 6GB).
+# Numbers are NOT gate numbers.
+kind: clarify_eval
+seed: 0
+n_pairs: 30
+model:
+  name: Qwen/Qwen2.5-0.5B-Instruct
+  device: auto
+out: store/derived/clarify_eval_qwen05b

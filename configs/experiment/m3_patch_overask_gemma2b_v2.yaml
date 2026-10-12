@@ -1,0 +1,13 @@
+# Causal gate for tau_overask on gemma-2-2b-it. Sites from the probe curve
+# (m3_probe_overask_gemma2b): pre-threshold L10, threshold L15, post L18/21/24
+# (behavior probe saturates at 1.00 from L20; 26 layers total).
+kind: patch_overask
+seed: 0
+records: store/derived/m2_collect_gemma2b_bf16_conv/records.jsonl
+sites: [10, 15, 18, 21, 24]
+n_random_controls: 3
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/m3_patch_overask_gemma2b_v2

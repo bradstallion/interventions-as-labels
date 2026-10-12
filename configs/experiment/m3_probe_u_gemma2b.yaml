@@ -1,0 +1,10 @@
+# M3 probe U on gemma-2-2b (PT, matches Gemma Scope SAEs) in bf16 — GPU tier.
+# TransformerLens capture; 26 layers. RQ1 gate numbers come from here.
+kind: probe_u
+seed: 0
+n_pairs: 100
+model:
+  name: google/gemma-2-2b
+  device: auto
+  dtype: bfloat16
+out: store/derived/m3_probe_u_gemma2b

@@ -1,0 +1,65 @@
+{
+ "scenario": {
+  "scenario_id": "fetch-0025-una",
+  "pair_id": "fetch-0025",
+  "family": "fetch",
+  "ambiguous": false,
+  "instruction": "Could you fetch the tiny book?",
+  "items": [
+   {
+    "id": "b1",
+    "attrs": {
+     "size": "small",
+     "color": "red"
+    }
+   },
+   {
+    "id": "b2",
+    "attrs": {
+     "size": "tiny",
+     "color": "yellow"
+    }
+   },
+   {
+    "id": "b3",
+    "attrs": {
+     "size": "small",
+     "color": "blue"
+    }
+   }
+  ],
+  "matching_ids": [
+   "b2"
+  ],
+  "target_id": "b2",
+  "clarify_dim": "color",
+  "clarify_value": "yellow",
+  "paraphrase_idx": 1,
+  "split": "train"
+ },
+ "backend": "microsoft/Phi-3-mini-4k-instruct",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: Could you fetch the tiny book?\nWorkspace items:\n- id=b1 color=red size=small\n- id=b2 color=yellow size=tiny\n- id=b3 color=blue size=small\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "ACTION: b2"
+ ],
+ "parsed_steps": [
+  {
+   "type": "act",
+   "arg": "b2",
+   "raw": "ACTION: b2"
+  }
+ ],
+ "outcome": "correct_act",
+ "conversational": true
+}

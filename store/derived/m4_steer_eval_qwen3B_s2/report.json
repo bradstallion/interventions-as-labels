@@ -1,0 +1,108 @@
+{
+ "policies": {
+  "none": {
+   "outcomes": {
+    "correct_clarify": 94,
+    "overask": 80,
+    "correct_act": 20,
+    "proceed_when_ambiguous": 6
+   },
+   "burden": {
+    "n": 200,
+    "watched": 150,
+    "interventions": 65,
+    "missed": 21,
+    "burden": 1.4
+   },
+   "gate_fired_episodes": 0,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.0
+  },
+  "prompt_only": {
+   "outcomes": {
+    "correct_clarify": 99,
+    "overask": 90,
+    "correct_act": 10,
+    "proceed_when_ambiguous": 1
+   },
+   "burden": {
+    "n": 200,
+    "watched": 150,
+    "interventions": 66,
+    "missed": 25,
+    "burden": 1.41
+   },
+   "gate_fired_episodes": 0,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": -0.00714285714285715
+  },
+  "steer_gated": {
+   "outcomes": {
+    "correct_clarify": 92,
+    "overask": 6,
+    "correct_act": 91,
+    "invalid": 1,
+    "proceed_when_ambiguous": 8,
+    "wrong_object": 2
+   },
+   "burden": {
+    "n": 200,
+    "watched": 24,
+    "interventions": 0,
+    "missed": 17,
+    "burden": 0.12
+   },
+   "gate_fired_episodes": 80,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.9142857142857143
+  },
+  "steer_style": {
+   "outcomes": {
+    "correct_clarify": 94,
+    "overask": 79,
+    "correct_act": 21,
+    "proceed_when_ambiguous": 6
+   },
+   "burden": {
+    "n": 200,
+    "watched": 150,
+    "interventions": 64,
+    "missed": 21,
+    "burden": 1.39
+   },
+   "gate_fired_episodes": 80,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.00714285714285715
+  },
+  "steer_random": {
+   "outcomes": {
+    "correct_clarify": 94,
+    "overask": 80,
+    "correct_act": 20,
+    "proceed_when_ambiguous": 6
+   },
+   "burden": {
+    "n": 200,
+    "watched": 150,
+    "interventions": 65,
+    "missed": 21,
+    "burden": 1.4
+   },
+   "gate_fired_episodes": 80,
+   "battery_accuracy": 1.0,
+   "battery_gate_firings": 0,
+   "irr_burden": 0.0
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-05T15:40:48.376345+00:00",
+  "git_sha": "unknown",
+  "config_hash": "017795a5de73",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

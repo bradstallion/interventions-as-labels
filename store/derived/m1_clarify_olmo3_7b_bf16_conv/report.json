@@ -1,0 +1,22 @@
+{
+ "backend": "allenai/Olmo-3-7B-Instruct",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "correct_clarify": 92,
+  "overask": 90,
+  "proceed_when_ambiguous": 7,
+  "correct_act": 9,
+  "wrong_object": 1,
+  "reask_after_answer": 1
+ },
+ "failure_rate_proceed_when_ambiguous": 0.07,
+ "invalid_rate": 0.0,
+ "meta": {
+  "created_utc": "2026-07-06T09:24:43.678368+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

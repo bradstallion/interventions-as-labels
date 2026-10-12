@@ -1,0 +1,5 @@
+# Smallest smoke-test model; CPU-viable.
+name: pythia-70m
+backend: transformer_lens
+dtype: float32
+device: auto

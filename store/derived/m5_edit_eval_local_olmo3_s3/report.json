@@ -1,0 +1,57 @@
+{
+ "models": {
+  "base": {
+   "outcomes": {
+    "correct_clarify": 89,
+    "overask": 91,
+    "proceed_when_ambiguous": 8,
+    "correct_act": 9,
+    "invalid": 1,
+    "reask_after_answer": 2
+   },
+   "burden": {
+    "n": 200,
+    "watched": 170,
+    "interventions": 83,
+    "missed": 19,
+    "burden": 1.68
+   },
+   "battery_accuracy": 0.92,
+   "battery_n": 50
+  },
+  "edited": {
+   "outcomes": {
+    "proceed_when_ambiguous": 22,
+    "correct_act": 96,
+    "correct_clarify": 77,
+    "wrong_object": 4,
+    "reask_after_answer": 1
+   },
+   "burden": {
+    "n": 200,
+    "watched": 34,
+    "interventions": 2,
+    "missed": 25,
+    "burden": 0.19
+   },
+   "battery_accuracy": 0.92,
+   "battery_n": 50
+  }
+ },
+ "criteria": {
+  "a_interventions_minus50": true,
+  "b_irr_burden": 0.886904761904762,
+  "b_pass": true,
+  "c_clarify_drop": 12,
+  "c_pass": false,
+  "d_battery_drop": 0.0,
+  "d_pass": true
+ },
+ "meta": {
+  "created_utc": "2026-07-07T09:20:52.965026+00:00",
+  "git_sha": "unknown",
+  "config_hash": "226e443d031e",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

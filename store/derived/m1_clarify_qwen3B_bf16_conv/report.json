@@ -1,0 +1,20 @@
+{
+ "backend": "Qwen/Qwen2.5-3B-Instruct",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "correct_clarify": 95,
+  "overask": 82,
+  "correct_act": 18,
+  "proceed_when_ambiguous": 5
+ },
+ "failure_rate_proceed_when_ambiguous": 0.05,
+ "invalid_rate": 0.0,
+ "meta": {
+  "created_utc": "2026-07-04T13:28:22.148664+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

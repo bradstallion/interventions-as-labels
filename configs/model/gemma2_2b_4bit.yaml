@@ -1,0 +1,8 @@
+# Dev-prototyping tier: generation-only, 4-bit (~2GB), fits the 6GB dev GPU.
+# For iterating on task env / agent scaffold / judge prompts with the real
+# target model. NEVER use for gate numbers: quantization shifts behavior.
+name: google/gemma-2-2b
+backend: hf_generation
+quantization: 4bit
+device: auto
+generation_only: true

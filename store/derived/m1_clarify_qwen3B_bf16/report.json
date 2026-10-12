@@ -1,0 +1,22 @@
+{
+ "backend": "Qwen/Qwen2.5-3B-Instruct",
+ "n_scenarios": 200,
+ "outcomes": {
+  "reask_after_answer": 45,
+  "overask": 82,
+  "correct_clarify": 45,
+  "correct_act": 18,
+  "proceed_when_ambiguous": 5,
+  "clarify_then_wrong": 4,
+  "invalid": 1
+ },
+ "failure_rate_proceed_when_ambiguous": 0.05,
+ "invalid_rate": 0.005,
+ "meta": {
+  "created_utc": "2026-07-03T18:44:19.493707+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

@@ -1,0 +1,16 @@
+# [multi-seed s2] M5 Nemo-12B (bc). Predictions written down beforehand (the two rules agree).
+kind: lora_edit
+seed: 0
+split_seed: 0
+records: store/derived/m2_collect_nemo12b_bf16_conv_s2/records.jsonl
+# no layers_to_transform: all layers (IIL baseline)
+lora_r: 8
+lora_alpha: 16
+lr: 1.0e-4
+epochs: 2
+grad_accum: 8
+model:
+  name: mistralai/Mistral-Nemo-Instruct-2407
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5_lora_bc_nemo12b_s2

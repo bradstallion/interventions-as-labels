@@ -1,0 +1,14 @@
+# M2 collection, dev-prototyping tier: Gemma 2 2B IT 4-bit + RuleOverseer.
+# Prototype numbers only; the gate collection re-runs on the GPU machine in bf16.
+# The RuleOverseer path is not blocked by the kappa study (toy env has
+# ground truth); the LLMOverseer path is validated separately.
+kind: collect_pairs
+seed: 0
+n_pairs: 100
+model:
+  name: google/gemma-2-2b-it
+  quantization: 4bit
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_gemma2b_it_4bit

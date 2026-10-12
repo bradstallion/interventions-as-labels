@@ -1,0 +1,5 @@
+# Dev-interp tier: full interpretability pipeline, runs on the 6GB dev GPU.
+name: gpt2
+backend: transformer_lens
+dtype: float32
+device: auto

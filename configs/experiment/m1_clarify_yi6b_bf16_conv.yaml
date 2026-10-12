@@ -1,0 +1,9 @@
+# Third family, screening round 2 (OLMo-3 excluded at the time: broken TL load, identical features).
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: 01-ai/Yi-6B-Chat
+  device: auto
+out: store/derived/m1_clarify_yi6b_bf16_conv

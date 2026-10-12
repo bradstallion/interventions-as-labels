@@ -1,0 +1,108 @@
+{
+ "models": {
+  "qwen3B": {
+   "site": "blocks.28.hook_resid_post",
+   "alpha_label": "extrapolated",
+   "selected_on": "train overasks (argmax of selection.table)",
+   "n_test_overask": 77,
+   "flips": 72,
+   "n_base_ask": 74,
+   "flip_rate": 0.972972972972973,
+   "wilson_ci95": [
+    0.9067070748308751,
+    0.9925566473617328
+   ],
+   "random_flip_max_all_sites": 0.013513513513513514,
+   "random_flip_max_frozen_site": 0.0
+  },
+  "gemma2b": {
+   "site": "blocks.21.hook_resid_post",
+   "alpha_label": "extrapolated",
+   "selected_on": "train overasks (argmax of selection.table)",
+   "n_test_overask": 78,
+   "flips": 63,
+   "n_base_ask": 76,
+   "flip_rate": 0.8289473684210527,
+   "wilson_ci95": [
+    0.729021253009869,
+    0.8972198094472776
+   ],
+   "random_flip_max_all_sites": 0.0,
+   "random_flip_max_frozen_site": 0.0
+  },
+  "olmo3": {
+   "site": "blocks.21.hook_resid_post",
+   "alpha_label": "extrapolated",
+   "selected_on": "train overasks (argmax of selection.table)",
+   "n_test_overask": 79,
+   "flips": 57,
+   "n_base_ask": 79,
+   "flip_rate": 0.7215189873417721,
+   "wilson_ci95": [
+    0.6141755025997595,
+    0.8083182643890088
+   ],
+   "random_flip_max_all_sites": 0.0,
+   "random_flip_max_frozen_site": 0.0
+  },
+  "nemo12b": {
+   "site": "blocks.22.hook_resid_post",
+   "alpha_label": "extrapolated",
+   "selected_on": "train overasks (argmax of selection.table)",
+   "n_test_overask": 82,
+   "flips": 77,
+   "n_base_ask": 81,
+   "flip_rate": 0.9506172839506173,
+   "wilson_ci95": [
+    0.8797976976951905,
+    0.9806306944459662
+   ],
+   "random_flip_max_all_sites": 0.0,
+   "random_flip_max_frozen_site": 0.0
+  },
+  "phi4": {
+   "site": "blocks.22.hook_resid_post",
+   "alpha_label": "extrapolated",
+   "selected_on": "train overasks (argmax of selection.table)",
+   "n_test_overask": 26,
+   "flips": 24,
+   "n_base_ask": 24,
+   "flip_rate": 1.0,
+   "wilson_ci95": [
+    0.8620237953250198,
+    1.0
+   ],
+   "random_flip_max_all_sites": 0.0,
+   "random_flip_max_frozen_site": 0.0
+  }
+ },
+ "provenance": {
+  "qwen3B": {
+   "source": "store/derived/m3_patch_overask_qwen3B_v2/report.json",
+   "sha256": "84117d9709bbf8c4cc97e48ef0a3932e2472c5032c4da4b3c4a129f1a05bde7a",
+   "model_name": "Qwen/Qwen2.5-3B-Instruct"
+  },
+  "gemma2b": {
+   "source": "store/derived/m3_patch_overask_gemma2b_v2/report.json",
+   "sha256": "b6ecee71119ebb2817b753d684de442f758978e7163ba2b05a02b6249e9a6b05",
+   "model_name": "google/gemma-2-2b-it"
+  },
+  "olmo3": {
+   "source": "store/derived/m3_patch_overask_olmo3_v2/report.json",
+   "sha256": "b3b02293e751fb677f559be821079be77847c8d6e02f765eb3a30c1035bae4c9",
+   "model_name": "allenai/Olmo-3-7B-Instruct"
+  },
+  "nemo12b": {
+   "source": "store/derived/m3_patch_overask_nemo12b_v2/report.json",
+   "sha256": "3767ab9c8ef9a5983ad5d40ef5d77cd59422d07ea13e481b954cb6f809ecfdee",
+   "model_name": "mistralai/Mistral-Nemo-Instruct-2407"
+  },
+  "phi4": {
+   "source": "store/derived/m3_patch_overask_phi4_v2/report.json",
+   "sha256": "5eba2b8a346deb99fb8f17bb4e3b9273cbd40161e1d1fcbb33365ca81de4036d",
+   "model_name": "microsoft/phi-4"
+  },
+  "aggregated_at_git_sha": "7744053711474f5c5bd5f065fcb477aa59477f91"
+ },
+ "note": "single-collection result (one records.jsonl per model); NOT a multi-seed replication \u2014 see the audit log for the history of the unreproducible three-seed arrays in the legacy rq1_summary.json"
+}

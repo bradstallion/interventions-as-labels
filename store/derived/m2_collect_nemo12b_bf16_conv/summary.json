@@ -1,0 +1,21 @@
+{
+ "records_path": "store/derived/m2_collect_nemo12b_bf16_conv/records.jsonl",
+ "n_records": 600,
+ "outcomes": {
+  "correct_clarify": 259,
+  "overask": 271,
+  "proceed_when_ambiguous": 4,
+  "correct_act": 29,
+  "reask_after_answer": 37
+ },
+ "intervention_rate_ambiguous": 0.13666666666666666,
+ "fp_rate_unambiguous_correct": 0.0,
+ "overseer_id": "rule-v2",
+ "meta": {
+  "created_utc": "2026-07-06T14:09:17.155875+00:00",
+  "git_sha": "unknown",
+  "config_hash": "44136fa355b3",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

@@ -1,0 +1,10 @@
+kind: dir_cosine
+seed: 0
+records: store/derived/m2_collect_phi4_bf16_conv/records.jsonl
+sites: [18, 22, 25, 28, 30, 34]
+style_n: 40
+model:
+  name: microsoft/phi-4
+  device: auto
+  dtype: bfloat16
+out: store/derived/dir_cosine_phi4

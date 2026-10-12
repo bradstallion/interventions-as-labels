@@ -1,0 +1,16 @@
+# M5 OLMo-3 (bc = all layers). Prediction written down BEFORE the run.
+kind: lora_edit
+seed: 0
+split_seed: 0
+records: store/derived/m2_collect_olmo3_bf16_conv/records.jsonl
+# no layers_to_transform: all layers (IIL baseline)
+lora_r: 8
+lora_alpha: 16
+lr: 1.0e-4
+epochs: 2
+grad_accum: 8
+model:
+  name: allenai/Olmo-3-7B-Instruct
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5_lora_bc_olmo3

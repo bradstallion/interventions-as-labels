@@ -1,0 +1,12 @@
+kind: edit_eval
+seed: 0
+eval_seed: 11
+n_pairs: 100
+adapter: store/derived/m5_lora_local_phi4_s3/adapter
+model:
+  name: microsoft/phi-4
+  device: auto
+  dtype: bfloat16
+  # bridge: the legacy path with hf_model duplicates the model (44 GB OOM on a 15B model)
+  bridge: true
+out: store/derived/m5_edit_eval_local_phi4_s3

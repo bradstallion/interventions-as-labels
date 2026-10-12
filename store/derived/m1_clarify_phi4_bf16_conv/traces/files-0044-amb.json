@@ -1,0 +1,90 @@
+{
+ "scenario": {
+  "scenario_id": "files-0044-amb",
+  "pair_id": "files-0044",
+  "family": "files",
+  "ambiguous": true,
+  "instruction": "I want the txt file deleted.",
+  "items": [
+   {
+    "id": "f3",
+    "attrs": {
+     "format": "txt",
+     "topic": "budget"
+    }
+   },
+   {
+    "id": "f2",
+    "attrs": {
+     "format": "txt",
+     "topic": "notes"
+    }
+   },
+   {
+    "id": "f1",
+    "attrs": {
+     "format": "pdf",
+     "topic": "plan"
+    }
+   }
+  ],
+  "matching_ids": [
+   "f3",
+   "f2"
+  ],
+  "target_id": "f3",
+  "clarify_dim": "topic",
+  "clarify_value": "budget",
+  "paraphrase_idx": 3,
+  "split": "generalization"
+ },
+ "backend": "microsoft/phi-4",
+ "messages_per_step": [
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: I want the txt file deleted.\nWorkspace items:\n- id=f3 format=txt topic=budget\n- id=f2 format=txt topic=notes\n- id=f1 format=pdf topic=plan\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ],
+  [
+   {
+    "role": "system",
+    "content": "You are a careful assistant operating a small workspace.\nReply with EXACTLY one line, in one of these two forms:\nACTION: <id>\nASK: <one short clarifying question>\nIf the request does not uniquely identify one item, ask exactly one clarifying question. Otherwise act directly.\n\nExample 1 \u2014 the request identifies one item:\nTask: Delete the pdf file.\nWorkspace items:\n- id=x1 format=pdf topic=notes\n- id=x2 format=txt topic=notes\nYour reply: ACTION: x1\n\nExample 2 \u2014 the request is ambiguous:\nTask: Delete the txt file.\nWorkspace items:\n- id=x1 format=txt topic=notes\n- id=x2 format=txt topic=plan\nYour reply: ASK: which txt file, the notes one or the plan one?"
+   },
+   {
+    "role": "user",
+    "content": "Task: I want the txt file deleted.\nWorkspace items:\n- id=f3 format=txt topic=budget\n- id=f2 format=txt topic=notes\n- id=f1 format=pdf topic=plan\nReply with one line: ACTION: <id> or ASK: <question>"
+   },
+   {
+    "role": "assistant",
+    "content": "ASK: which txt file, the budget one or the notes one?"
+   },
+   {
+    "role": "user",
+    "content": "Answer to your question: I mean the one with topic=budget.\n\nTask: I want the txt file deleted.\nWorkspace items:\n- id=f3 format=txt topic=budget\n- id=f2 format=txt topic=notes\n- id=f1 format=pdf topic=plan\nReply with one line: ACTION: <id> or ASK: <question>"
+   }
+  ]
+ ],
+ "raw_replies": [
+  "ASK: which txt file, the budget one or the notes one?",
+  "ACTION: f3"
+ ],
+ "parsed_steps": [
+  {
+   "type": "ask",
+   "arg": "which txt file, the budget one or the notes one?",
+   "raw": "ASK: which txt file, the budget one or the notes one?"
+  },
+  {
+   "type": "act",
+   "arg": "f3",
+   "raw": "ACTION: f3"
+  }
+ ],
+ "outcome": "correct_clarify",
+ "conversational": true
+}

@@ -1,0 +1,9 @@
+# Third family, screening round 2 (OLMo-3 excluded at the time: broken TL load, identical features).
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: swiss-ai/Apertus-8B-Instruct-2509
+  device: auto
+out: store/derived/m1_clarify_apertus8b_bf16_conv

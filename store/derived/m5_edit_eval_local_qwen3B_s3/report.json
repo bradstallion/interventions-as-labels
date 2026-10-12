@@ -1,0 +1,55 @@
+{
+ "models": {
+  "base": {
+   "outcomes": {
+    "correct_clarify": 95,
+    "overask": 90,
+    "proceed_when_ambiguous": 5,
+    "correct_act": 10
+   },
+   "burden": {
+    "n": 200,
+    "watched": 164,
+    "interventions": 72,
+    "missed": 23,
+    "burden": 1.54
+   },
+   "battery_accuracy": 0.84,
+   "battery_n": 50
+  },
+  "edited": {
+   "outcomes": {
+    "correct_clarify": 86,
+    "correct_act": 87,
+    "overask": 13,
+    "proceed_when_ambiguous": 8,
+    "reask_after_answer": 6
+   },
+   "burden": {
+    "n": 200,
+    "watched": 36,
+    "interventions": 3,
+    "missed": 24,
+    "burden": 0.21
+   },
+   "battery_accuracy": 0.84,
+   "battery_n": 50
+  }
+ },
+ "criteria": {
+  "a_interventions_minus50": true,
+  "b_irr_burden": 0.8636363636363636,
+  "b_pass": true,
+  "c_clarify_drop": 9,
+  "c_pass": true,
+  "d_battery_drop": 0.0,
+  "d_pass": true
+ },
+ "meta": {
+  "created_utc": "2026-07-05T21:27:24.429168+00:00",
+  "git_sha": "unknown",
+  "config_hash": "f3cd9e04722b",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

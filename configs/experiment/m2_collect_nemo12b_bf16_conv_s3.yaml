@@ -1,0 +1,13 @@
+# [multi-seed s3] Second eligible candidate (screening: 84% overask, 16 correct_act, 0 invalid).
+# Tokenizer NOTE: fix_mistral_regex warning at load — verify_token_replay in the probe
+# run is the arbiter; if it drifts, handle the flag BEFORE reading any number.
+kind: collect_pairs
+seed: 3
+n_pairs: 300
+conversational: true
+model:
+  name: mistralai/Mistral-Nemo-Instruct-2407
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_nemo12b_bf16_conv_s3

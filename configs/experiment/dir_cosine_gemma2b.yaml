@@ -1,0 +1,11 @@
+# Cosine between behavior/U/style directions on gemma.
+kind: dir_cosine
+seed: 0
+records: store/derived/m2_collect_gemma2b_bf16_conv/records.jsonl
+sites: [15, 18, 21, 24]
+style_n: 40
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/dir_cosine_gemma2b

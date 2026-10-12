@@ -1,0 +1,42 @@
+{
+ "model": "microsoft/phi-4",
+ "sites": {
+  "blocks.18.hook_resid_post": {
+   "cos_behavior_style": 0.07194077968597412,
+   "cos_behavior_u": 0.18001900613307953,
+   "cos_u_style": 0.03217306360602379
+  },
+  "blocks.22.hook_resid_post": {
+   "cos_behavior_style": 0.21387174725532532,
+   "cos_behavior_u": 0.23674464225769043,
+   "cos_u_style": 0.057825490832328796
+  },
+  "blocks.25.hook_resid_post": {
+   "cos_behavior_style": 0.38512030243873596,
+   "cos_behavior_u": 0.16608530282974243,
+   "cos_u_style": 0.04819079861044884
+  },
+  "blocks.28.hook_resid_post": {
+   "cos_behavior_style": 0.5175743699073792,
+   "cos_behavior_u": 0.17552000284194946,
+   "cos_u_style": 0.08011876791715622
+  },
+  "blocks.30.hook_resid_post": {
+   "cos_behavior_style": 0.534319281578064,
+   "cos_behavior_u": 0.1502559781074524,
+   "cos_u_style": 0.07136759161949158
+  },
+  "blocks.34.hook_resid_post": {
+   "cos_behavior_style": 0.5287579298019409,
+   "cos_behavior_u": 0.10594382882118225,
+   "cos_u_style": 0.08363662660121918
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-06T17:50:35.354539+00:00",
+  "git_sha": "unknown",
+  "config_hash": "0a3448aafd31",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

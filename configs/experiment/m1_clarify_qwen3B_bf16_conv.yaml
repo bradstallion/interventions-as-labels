@@ -1,0 +1,10 @@
+# tau5 scaffold ablation: conversational=true — the agent SEES
+# its own step-1 question. Compare against the stateless bf16 run.
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  device: auto
+out: store/derived/m1_clarify_qwen3B_bf16_conv

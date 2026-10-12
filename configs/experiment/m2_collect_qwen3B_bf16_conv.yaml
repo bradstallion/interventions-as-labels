@@ -1,0 +1,13 @@
+# tau_overask data collection: fresh episodes, conversational scaffold
+# (default since experiment 0), RuleOverseer v2, bigger n for the 82/18
+# behavioral contrast on unambiguous scenarios.
+kind: collect_pairs
+seed: 1
+n_pairs: 300
+conversational: true
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  device: auto
+overseer:
+  kind: rule
+out: store/derived/m2_collect_qwen3B_bf16_conv

@@ -1,0 +1,183 @@
+{
+ "model": "gpt2",
+ "n_scenarios": 120,
+ "last_position": {
+  "blocks.0.hook_resid_post": {
+   "auc": 0.4228395061728395,
+   "canary_auc": 0.438744295565116,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.1.hook_resid_post": {
+   "auc": 0.49691358024691357,
+   "canary_auc": 0.42537691990671866,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.2.hook_resid_post": {
+   "auc": 0.4969135802469136,
+   "canary_auc": 0.42374650697599614,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.3.hook_resid_post": {
+   "auc": 0.5061728395061729,
+   "canary_auc": 0.4267532970125849,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.4.hook_resid_post": {
+   "auc": 0.49382716049382713,
+   "canary_auc": 0.4418460254915363,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.5.hook_resid_post": {
+   "auc": 0.6018518518518519,
+   "canary_auc": 0.4368623095171083,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.6.hook_resid_post": {
+   "auc": 0.6049382716049383,
+   "canary_auc": 0.435817593783925,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.7.hook_resid_post": {
+   "auc": 0.595679012345679,
+   "canary_auc": 0.4735562753809658,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.8.hook_resid_post": {
+   "auc": 0.595679012345679,
+   "canary_auc": 0.48538822825781036,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.9.hook_resid_post": {
+   "auc": 0.6018518518518519,
+   "canary_auc": 0.48402454163483577,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.10.hook_resid_post": {
+   "auc": 0.6049382716049383,
+   "canary_auc": 0.4953893590929194,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.11.hook_resid_post": {
+   "auc": 0.6049382716049383,
+   "canary_auc": 0.5172677515982469,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  }
+ },
+ "instruction_final_canary": {
+  "blocks.0.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.1.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.2.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.3.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.4.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.5.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.6.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.7.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.8.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.9.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.10.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  },
+  "blocks.11.hook_resid_post": {
+   "auc": 0.5,
+   "canary_auc": 0.5,
+   "canary_ok": true,
+   "n_train": 84,
+   "n_test": 36
+  }
+ },
+ "meta": {
+  "created_utc": "2026-07-03T18:22:12.049699+00:00",
+  "git_sha": "cce27a02f0d3145f780e2eaaa9dce1654eaeabcb-dirty",
+  "config_hash": "13ec782d6861",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

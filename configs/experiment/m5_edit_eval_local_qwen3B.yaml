@@ -1,0 +1,11 @@
+# M5 eval: base vs LoRA-local edit, same scenarios as M4 s1 (eval_seed 9).
+kind: edit_eval
+seed: 0
+eval_seed: 9
+n_pairs: 100
+adapter: store/derived/m5_lora_local_qwen3B/adapter
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5_edit_eval_local_qwen3B

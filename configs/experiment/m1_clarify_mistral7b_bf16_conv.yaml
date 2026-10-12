@@ -1,0 +1,9 @@
+# Third family, screening (Phi-3 excluded — no over-asking).
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+conversational: true
+model:
+  name: mistralai/Mistral-7B-Instruct-v0.1
+  device: auto
+out: store/derived/m1_clarify_mistral7b_bf16_conv

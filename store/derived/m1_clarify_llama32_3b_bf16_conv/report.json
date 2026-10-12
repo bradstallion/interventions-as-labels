@@ -1,0 +1,18 @@
+{
+ "backend": "meta-llama/Llama-3.2-3B-Instruct",
+ "conversational": true,
+ "n_scenarios": 200,
+ "outcomes": {
+  "correct_clarify": 100,
+  "overask": 100
+ },
+ "failure_rate_proceed_when_ambiguous": 0.0,
+ "invalid_rate": 0.0,
+ "meta": {
+  "created_utc": "2026-07-06T10:50:05.289744+00:00",
+  "git_sha": "unknown",
+  "config_hash": "1deef33bddc9",
+  "torch_version": "2.12.1+cu130",
+  "cuda_available": true
+ }
+}

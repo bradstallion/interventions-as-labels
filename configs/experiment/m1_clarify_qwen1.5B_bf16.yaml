@@ -1,0 +1,8 @@
+# Candidate model scan for tau1 (gate M1): bf16, GPU tier.
+kind: clarify_eval
+seed: 0
+n_pairs: 100
+model:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+  device: auto
+out: store/derived/m1_clarify_qwen1.5B_bf16

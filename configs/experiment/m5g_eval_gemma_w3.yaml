@@ -1,0 +1,11 @@
+# Band-width sweep (predictions written down beforehand): evaluation
+kind: edit_eval
+seed: 0
+eval_seed: 9
+n_pairs: 100
+adapter: store/derived/m5g_lora_gemma_w3/adapter
+model:
+  name: google/gemma-2-2b-it
+  device: auto
+  dtype: bfloat16
+out: store/derived/m5g_eval_gemma_w3
