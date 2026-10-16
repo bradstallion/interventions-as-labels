@@ -4,7 +4,7 @@ Code, configurations, episode logs and reports for the paper
 
 > **Human Interventions as Labels: Localizing, Steering, and (Sometimes) Editing the
 > Computations Behind LLM Agent Failures.** Cesare Zavattari, Alessandro Tommasi,
-> Giuseppe Prencipe. Preprint, 2026. arXiv: *to be added*.
+> Giuseppe Prencipe. Preprint, 2026. [arXiv:2610.21708](https://arxiv.org/abs/2610.21708).
 
 The idea in one line: when a human corrects an LLM agent, the correction is a label
 pointing at the internal computation that just failed. The paper uses such labels to
