@@ -5,7 +5,7 @@ The trace stores the EXACT message list sent to the model at every step
 the message lists from the scenario alone and verifies they are identical to
 what was stored — the boundary-invariant check that guards the
 
-    vLLM rollout  ->  hooked (TransformerLens) re-execution
+    transformers rollout  ->  hooked (TransformerLens) re-execution
 
 hand-off in M2/M3: if replay drifts from the original, activations would be
 captured on prompts the agent never actually saw.
